@@ -16,7 +16,7 @@ const User = sequelize.define('users', {
     allowNull: false
   },
   age: {
-    type: DataTypes.INTEGER(3),
+    type: DataTypes.TINYINT,
     allowNull: false
   },
   email: {
@@ -29,10 +29,10 @@ const User = sequelize.define('users', {
     type: DataTypes.TEXT
   },
   address: {
-    type: DataTypes.STRING // Default length is 255
+    type: DataTypes.STRING
   },
   phone: {
-    type: DataTypes.INTEGER(9)
+    type: DataTypes.INTEGER
   },
   isActive: {
     type: DataTypes.BOOLEAN,
